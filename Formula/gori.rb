@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.1/gori-v0.1.1-osx-arm64.tar.gz"
-      sha256 "190975cf65b15dbb28a4e1dc7e087b53e1dbb4f6dd91a29ab94b7f6f497d0ce5"
+      url "https://github.com/hahwul/gori/releases/download/v0.1.2/gori-v0.1.2-osx-arm64.tar.gz"
+      sha256 "244a639065ac7780d14a84420c9a09377fe56f4223e073d7649f172e930a2bfb"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.1/gori-v0.1.1-osx-x86_64.tar.gz"
-      sha256 "3526b92380b8364fb754676501d730dfd327111773c21e670f5602c6ca6b8d02"
+      url "https://github.com/hahwul/gori/releases/download/v0.1.2/gori-v0.1.2-osx-x86_64.tar.gz"
+      sha256 "04de494388a433e3af00a07e451fdb17d173a7272a87d1e28da3da9e4f55984a"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.1/gori-v0.1.1-linux-arm64"
-      sha256 "77f7981178f20a077fe1b026f31e0b6816da905bd3fb0235ece386503ff1ef7f"
+      url "https://github.com/hahwul/gori/releases/download/v0.1.2/gori-v0.1.2-linux-arm64"
+      sha256 "ef74da39d891b1092466dd0b210b403295ef7fb02d2c0fcd12501d5a88aeb139"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.1/gori-v0.1.1-linux-x86_64"
-      sha256 "e5d4670f18d1b8ae290f3451db853edb65fdd9d4991cc8e25ce94810b9683ff7"
+      url "https://github.com/hahwul/gori/releases/download/v0.1.2/gori-v0.1.2-linux-x86_64"
+      sha256 "22d4239ba808e45c972b63a2592973c9b82f9181402478a94ce84ca6c590a899"
     end
   end
 

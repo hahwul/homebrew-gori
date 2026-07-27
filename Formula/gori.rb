@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.1.4"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.4/gori-v0.1.4-osx-arm64.tar.gz"
-      sha256 "2ac9840f65f4de092908412cf532cf47118c28b82ef02acba1a2fead61b4e466"
+      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-osx-arm64.tar.gz"
+      sha256 "343324d6d107334e295512fa3059d60c7be7767777f6491135654ddfa7952c48"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.4/gori-v0.1.4-osx-x86_64.tar.gz"
-      sha256 "0d3c1d0ab55ea8fa99bedaa4710a01c0719dcc90816d213eb4e3a0f0201a3388"
+      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-osx-x86_64.tar.gz"
+      sha256 "24ff0afaa3f34cff88d6fd08abadbbc4d4f0fbd127a9ff73de57c229cf0462ed"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.4/gori-v0.1.4-linux-arm64"
-      sha256 "3437aa190e1597ef36521182aacd249f6af442a3c70d3b79b633364bd8863778"
+      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-linux-arm64"
+      sha256 "129845a113feba2948ffc4d69369ce0be47ae227554fa9f1d523cd63fff38657"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.1.4/gori-v0.1.4-linux-x86_64"
-      sha256 "6bac337fb477f89cde5c42cb89245c2d159e7016764e645977f452c0c894885d"
+      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-linux-x86_64"
+      sha256 "466f272850dbdbce2856c5c7ac9b46ff75ea546241829665be84ea1f44467e90"
     end
   end
 

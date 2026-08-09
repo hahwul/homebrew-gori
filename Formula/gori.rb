@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-osx-arm64.tar.gz"
-      sha256 "343324d6d107334e295512fa3059d60c7be7767777f6491135654ddfa7952c48"
+      url "https://github.com/hahwul/gori/releases/download/v0.3.0/gori-v0.3.0-osx-arm64.tar.gz"
+      sha256 "c18eab0cffe294fd0029afce529139094a14cef851e35052a652c6280c55bded"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-osx-x86_64.tar.gz"
-      sha256 "24ff0afaa3f34cff88d6fd08abadbbc4d4f0fbd127a9ff73de57c229cf0462ed"
+      url "https://github.com/hahwul/gori/releases/download/v0.3.0/gori-v0.3.0-osx-x86_64.tar.gz"
+      sha256 "64d7e229648c82a95efb963f85e4fd90e04649bbc449ce16827026d83f3031b1"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-linux-arm64"
-      sha256 "129845a113feba2948ffc4d69369ce0be47ae227554fa9f1d523cd63fff38657"
+      url "https://github.com/hahwul/gori/releases/download/v0.3.0/gori-v0.3.0-linux-arm64"
+      sha256 "a1c72e28bf4729be7e9df821fcb9c0be3b6f533ddd5faa494c5b60ef5d4eb8f1"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.2.0/gori-v0.2.0-linux-x86_64"
-      sha256 "466f272850dbdbce2856c5c7ac9b46ff75ea546241829665be84ea1f44467e90"
+      url "https://github.com/hahwul/gori/releases/download/v0.3.0/gori-v0.3.0-linux-x86_64"
+      sha256 "4a9727f056034af0d8509f5f42f3d918a4d52f1b1f5945c0f58016eaf0fa7b51"
     end
   end
 

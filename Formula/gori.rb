@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.4.0/gori-v0.4.0-osx-arm64.tar.gz"
-      sha256 "4570d00884658f72265743756739c5e83d0d8777e022ae794d9abc35e8272db4"
+      url "https://github.com/hahwul/gori/releases/download/v0.5.0/gori-v0.5.0-osx-arm64.tar.gz"
+      sha256 "4df787864d5311c34389bcf014ac24da94a14888465ee667a97399302fadd56d"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.4.0/gori-v0.4.0-osx-x86_64.tar.gz"
-      sha256 "d9161f65952d773afc16e4697575fcb6c84d46c8ef56aab41aa5524e25e04f8b"
+      url "https://github.com/hahwul/gori/releases/download/v0.5.0/gori-v0.5.0-osx-x86_64.tar.gz"
+      sha256 "a13ced993b1b9ec89a6fd847c4f8e5c426bced7eeaa5750f7739b3afb49f6d85"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.4.0/gori-v0.4.0-linux-arm64"
-      sha256 "3421e328daf6a67fa42b8e9602f7d62eee02654508d49632971d3f063ca1e948"
+      url "https://github.com/hahwul/gori/releases/download/v0.5.0/gori-v0.5.0-linux-arm64"
+      sha256 "0358ead6ce691c31054f0dde2e40c0ca5a224c232afa90355417b8e63ae56b9c"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.4.0/gori-v0.4.0-linux-x86_64"
-      sha256 "3e6bbc22b0ee9c72743861d6633baf6e11d3ed9fe2f7e61c9806e8644d947c04"
+      url "https://github.com/hahwul/gori/releases/download/v0.5.0/gori-v0.5.0-linux-x86_64"
+      sha256 "ee70ba4550b10a5c4f5f5f6b0438388d79c17840c6cc3f6e2c12f3045cae4489"
     end
   end
 

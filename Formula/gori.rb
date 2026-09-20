@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.6.1"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.6.1/gori-v0.6.1-osx-arm64.tar.gz"
-      sha256 "3d94b6e3fd18e85542927935502771ec48b40b755aec36ff1b58bf6ef356a1c2"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-osx-arm64.tar.gz"
+      sha256 "6bf1e1828e011c51b34e4081a49be1ea4c523d9f9a07b05b5ad6547374e1d798"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.6.1/gori-v0.6.1-osx-x86_64.tar.gz"
-      sha256 "8c5e31ebde6bdbec1db80fd8a55d26a44225fe538ebb0172544aa3f1030eead1"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-osx-x86_64.tar.gz"
+      sha256 "9688b37d8b80cda6b20f9d4b95d3ea284b6f9732c799110022af4b0f1345a97d"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.6.1/gori-v0.6.1-linux-arm64"
-      sha256 "c7085160e72bd8d16903012c14b707a7554e07efe344c0e7f76225a37cc944b5"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-linux-arm64"
+      sha256 "38cb61b8befa0fafb926cfad5ab068da91f8ac8b9fc6190975444acab976204c"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.6.1/gori-v0.6.1-linux-x86_64"
-      sha256 "581a77a965fd58713a9e4bb31c08faeeb24e6cb789aba22a1bba4ef0cbcc05f6"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-linux-x86_64"
+      sha256 "f11850f681e22ecc9b4fedde1c779acd82bcf04165b69990d1784dfb0fb4bf2f"
     end
   end
 

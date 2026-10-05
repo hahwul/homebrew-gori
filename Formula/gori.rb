@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.7.1"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-osx-arm64.tar.gz"
-      sha256 "52fe954cec1abf3e2d170c5bfbc1e426e89fdccf81505f1847e01ce055608da4"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-osx-arm64.tar.gz"
+      sha256 "e6beccccf5fc5ade07e29a1f66f3dd6adf29aa6e9557ce9cea385b41e6ce1813"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-osx-x86_64.tar.gz"
-      sha256 "72ed45b57dc83ac787fee791c28ce5a1137fe650cf31444e028666eeb5032ec8"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-osx-x86_64.tar.gz"
+      sha256 "01d385b0c37df599f88c87ff0b9c6ae4a54f00f126316843ea0ea337f6794bf2"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-linux-arm64"
-      sha256 "a690646af2db8cad8ba66596a01aeedaa7c9b85f56328a78fee83e70e963334d"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-linux-arm64"
+      sha256 "76373279c9ac9bb86f64702bf2fc5a933ebecd02548ad65aa5b9458c806c6f9a"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-linux-x86_64"
-      sha256 "5ddeffe1c3e5fdfca6f57b4c891e4f5dccbe42c6e0f86a889c489466f1314c6f"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-linux-x86_64"
+      sha256 "fd08d6d2cf9fe153aba825d8cf54cdf82de3743dfc23ed67aeb4f79fba21a302"
     end
   end
 

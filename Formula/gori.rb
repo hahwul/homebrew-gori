@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.7.0"
+  version "0.7.1"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-osx-arm64.tar.gz"
-      sha256 "6bf1e1828e011c51b34e4081a49be1ea4c523d9f9a07b05b5ad6547374e1d798"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-osx-arm64.tar.gz"
+      sha256 "52fe954cec1abf3e2d170c5bfbc1e426e89fdccf81505f1847e01ce055608da4"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-osx-x86_64.tar.gz"
-      sha256 "9688b37d8b80cda6b20f9d4b95d3ea284b6f9732c799110022af4b0f1345a97d"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-osx-x86_64.tar.gz"
+      sha256 "72ed45b57dc83ac787fee791c28ce5a1137fe650cf31444e028666eeb5032ec8"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-linux-arm64"
-      sha256 "38cb61b8befa0fafb926cfad5ab068da91f8ac8b9fc6190975444acab976204c"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-linux-arm64"
+      sha256 "a690646af2db8cad8ba66596a01aeedaa7c9b85f56328a78fee83e70e963334d"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.7.0/gori-v0.7.0-linux-x86_64"
-      sha256 "f11850f681e22ecc9b4fedde1c779acd82bcf04165b69990d1784dfb0fb4bf2f"
+      url "https://github.com/hahwul/gori/releases/download/v0.7.1/gori-v0.7.1-linux-x86_64"
+      sha256 "5ddeffe1c3e5fdfca6f57b4c891e4f5dccbe42c6e0f86a889c489466f1314c6f"
     end
   end
 

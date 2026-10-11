@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.8.0"
+  version "0.8.1"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-osx-arm64.tar.gz"
-      sha256 "e6beccccf5fc5ade07e29a1f66f3dd6adf29aa6e9557ce9cea385b41e6ce1813"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.1/gori-v0.8.1-osx-arm64.tar.gz"
+      sha256 "9481913377594ea30485cfc6aced738c4019d99cf3d6254b8eab778b64aa8b30"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-osx-x86_64.tar.gz"
-      sha256 "01d385b0c37df599f88c87ff0b9c6ae4a54f00f126316843ea0ea337f6794bf2"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.1/gori-v0.8.1-osx-x86_64.tar.gz"
+      sha256 "1defd7407780d4f05c1c1f65406a8c27474c0292946e19c95468f95d3fae8495"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-linux-arm64"
-      sha256 "76373279c9ac9bb86f64702bf2fc5a933ebecd02548ad65aa5b9458c806c6f9a"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.1/gori-v0.8.1-linux-arm64"
+      sha256 "8034fe04fa8af1ea8bbcefa7a871f024e7acd77d4ee94ec74019c618ac7550f3"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.8.0/gori-v0.8.0-linux-x86_64"
-      sha256 "fd08d6d2cf9fe153aba825d8cf54cdf82de3743dfc23ed67aeb4f79fba21a302"
+      url "https://github.com/hahwul/gori/releases/download/v0.8.1/gori-v0.8.1-linux-x86_64"
+      sha256 "35079d0dd5b3de00023987b715e3be52bb0ce4456717951425b5d43138735c58"
     end
   end
 

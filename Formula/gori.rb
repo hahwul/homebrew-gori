@@ -6,7 +6,7 @@
 class Gori < Formula
   desc "TUI web proxy (MITM) for inspecting, intercepting and replaying HTTP traffic"
   homepage "https://github.com/hahwul/gori"
-  version "0.9.1"
+  version "0.9.2"
   license "Apache-2.0"
 
   on_macos do
@@ -16,24 +16,24 @@ class Gori < Formula
     # each image, so no brew dependency is needed. libsqlite3 is not bundled: it
     # resolves to /usr/lib/libsqlite3.dylib, which every macOS ships.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.9.1/gori-v0.9.1-osx-arm64.tar.gz"
-      sha256 "77eaf6edf95fd42be9b459b94a9217955b855564bfd5ccbb25585f9c9aba28cc"
+      url "https://github.com/hahwul/gori/releases/download/v0.9.2/gori-v0.9.2-osx-arm64.tar.gz"
+      sha256 "f0cb3cfe9be177bbdab275019292c5b1706e6bf34563c031dc2e66a98de95f06"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.9.1/gori-v0.9.1-osx-x86_64.tar.gz"
-      sha256 "2917f42beb827272ffd50a9e0dc2e11335cc5cd486ba6677ad807c64f271a3d4"
+      url "https://github.com/hahwul/gori/releases/download/v0.9.2/gori-v0.9.2-osx-x86_64.tar.gz"
+      sha256 "d4cbcd5ec38b314f244c5ded0ed1f41929c9554f0aa6afed2aaf0029f661070d"
     end
   end
 
   on_linux do
     # Linux release binaries are statically linked (musl), so they are self-contained.
     on_arm do
-      url "https://github.com/hahwul/gori/releases/download/v0.9.1/gori-v0.9.1-linux-arm64"
-      sha256 "3d3cd1f61680d7d805911d010d824d22cbdd58468b047b3baaed53b23bbc9445"
+      url "https://github.com/hahwul/gori/releases/download/v0.9.2/gori-v0.9.2-linux-arm64"
+      sha256 "8c030fdef8f7a6539dcf3214feef368aac05041f2ae59e3ee2b8e02702469782"
     end
     on_intel do
-      url "https://github.com/hahwul/gori/releases/download/v0.9.1/gori-v0.9.1-linux-x86_64"
-      sha256 "4e6a84ee9bf3d454306816ecc0c0cee50bcedb41e9d82c045be0b8ee813148b0"
+      url "https://github.com/hahwul/gori/releases/download/v0.9.2/gori-v0.9.2-linux-x86_64"
+      sha256 "21eb1c83b952820ed91e84866b51d66b1a91a4ec2e595ef111240028c3deb40d"
     end
   end
 
